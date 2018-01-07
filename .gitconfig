@@ -1,0 +1,9 @@
+[color]
+	ui = true
+[user]
+	email = marcobaldelli@users.noreply.github.com
+	name = Marco Baldelli
+[diff]
+	tool = vimdiff
+[core]
+	editor = vim
