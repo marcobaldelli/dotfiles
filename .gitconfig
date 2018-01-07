@@ -7,3 +7,5 @@
 	tool = vimdiff
 [core]
 	editor = vim
+[alias]
+	lg = log --oneline --graph
