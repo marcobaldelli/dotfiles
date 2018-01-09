@@ -1,3 +1,5 @@
+" vim: foldenable foldmethod=marker
+set nocompatible
 syntax on
 execute pathogen#infect()
 colorscheme onedark
@@ -14,7 +16,6 @@ set ignorecase                 " Search is always case insensitive
 set incsearch                  " Enable incremental search
 set iskeyword+=_               " Treat underscore as a keyword (useful for word-based movements)
 set linebreak                  " Don't break words when displaying wrapped lines
-set lines=999 columns=999      " Maximize window
 set listchars=tab:▸\ ,eol:¬,trail:·
 set mouse=a                    " Enable mouse for all modes
 set nobackup                   " Don't create a backup file
@@ -45,16 +46,20 @@ set statusline+=%=                   " Separation point between left and right a
 set statusline+=\ {%Y}               " Type of file in the buffer
 set statusline+=\ [%{&fileencoding}, " File encoding (eg. utf-8)
 set statusline+=\ %{&fileformat}]    " File format (eg. dos, unix)
-"}}}
+" }}}
 
+" Custom functions {{{
 function! StripTrailingWhitespace()
     %s/\s\+$//e
     let @/=''
 endfunction
 nnoremap <leader>W :call StripTrailingWhitespace()<CR>
+" }}}
 
-" Markdown
+" Markdown {{{
 autocmd BufNewFile,BufRead *.md set filetype=markdown
+"}}}
 
-" Oracle PL/SQL
+" Oracle PL/SQL {{{
 autocmd BufNewFile,BufRead *.sql,*.pks,*.pkb,*.vw,*.tab,*.prc,*.fnc,*.tpb,afiedt.buf set filetype=plsql
+"}}}
