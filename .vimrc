@@ -63,3 +63,8 @@ autocmd BufNewFile,BufRead *.md set filetype=markdown
 " Oracle PL/SQL {{{
 autocmd BufNewFile,BufRead *.sql,*.pks,*.pkb,*.vw,*.tab,*.prc,*.fnc,*.tpb,afiedt.buf set filetype=plsql
 "}}}
+
+" Crontab{{{
+" Fixes error `crontab: temp file must be edited in place`
+autocmd filetype crontab setlocal nobackup nowritebackup
+"}}}
