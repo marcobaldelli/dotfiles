@@ -24,6 +24,7 @@ set nolist                     " Show listchars such as tab, end-of-line and tra
 set nonumber                   " Don't show line numbers
 set noswapfile                 " Don't create a swap file
 set shortmess+=I               " Don't show the `intro' message
+set showbreak=↪                " String to put at the start of lines that have been wrapped
 set showcmd                    " Show (partial) command in the last line of the screen
 set showmatch                  " When a bracket is inserted, briefly jump to the matching one
 set spellsuggest=best,10       " Spelling shows at most 10 suggestions
