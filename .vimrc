@@ -49,6 +49,25 @@ set statusline+=\ [%{&fileencoding}, " File encoding (eg. utf-8)
 set statusline+=\ %{&fileformat}]    " File format (eg. dos, unix)
 " }}}
 
+" Custom key mappings {{{
+" Clear search highlighting
+nmap <silent> <C-L> :let @/=""<CR>
+
+" Reselect visual block after (in|de)dent in visual mode
+vnoremap < <gv
+vnoremap > >gv
+
+" Insert current date and time
+imap <silent> <C-F5> [<C-R>=strftime("%Y-%m-%d %H:%M")<CR>]
+
+" List buffers
+nnoremap <c-b> :ls<cr>:b<space>
+
+" Switch between next/previous buffer
+map <C-TAB> :bnext<CR>
+map <C-S-TAB> :bprev<CR>
+"}}}
+
 " Custom functions {{{
 function! StripTrailingWhitespace()
     %s/\s\+$//e
