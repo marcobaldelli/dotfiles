@@ -1,5 +1,6 @@
 " vim: foldenable foldmethod=marker
 set nocompatible
+language messages en " always use English for interface messages
 syntax on
 execute pathogen#infect()
 colorscheme onedark
