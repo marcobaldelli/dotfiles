@@ -5,6 +5,11 @@ syntax on
 execute pathogen#infect()
 colorscheme onedark
 
+if has("win32")
+  " Set options and add mapping such that Vim behaves a lot like MS-Windows
+  source $VIMRUNTIME/mswin.vim
+endif
+
 " Variables configuration {{{
 set autochdir                  " Change to the directory containing the file which was opened
 set backspace=indent,eol,start " Allow backspacing over everything in insert mode
