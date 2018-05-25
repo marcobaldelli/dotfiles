@@ -1,0 +1,17 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\.vw]
+@="vw_auto_file"
+"PerceivedType"="text"
+
+[HKEY_CLASSES_ROOT\.pks]
+@="pks_auto_file"
+"PerceivedType"="text"
+
+[HKEY_CLASSES_ROOT\.pkb]
+@="pkb_auto_file"
+"PerceivedType"="text"
+
+[HKEY_CLASSES_ROOT\.md]
+@="md_auto_file"
+"PerceivedType"="text"
