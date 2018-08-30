@@ -4,11 +4,10 @@ language messages en_US.UTF-8 " always use English for interface messages
 syntax on
 execute pathogen#infect()
 
-" git clone https://github.com/joshdick/onedark.vim.git
 if (has("termguicolors"))
   set termguicolors
 endif
-colorscheme onedark
+colorscheme torte
 
 if has("win32")
   " Set options and add mapping such that Vim behaves a lot like MS-Windows
