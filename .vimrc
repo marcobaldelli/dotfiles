@@ -4,7 +4,8 @@ language messages en_US.UTF-8 " always use English for interface messages
 syntax on
 execute pathogen#infect()
 
-if (has("termguicolors"))
+" termguicolors doesn't seem to work correctly in OSX Terminal
+if (has("termguicolors") && ! has("osx"))
   set termguicolors
 endif
 colorscheme torte
