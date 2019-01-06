@@ -8,7 +8,13 @@ execute pathogen#infect()
 if (has("termguicolors") && ! has("osx"))
   set termguicolors
 endif
-colorscheme torte
+
+if has("osx")
+  " git clone https://github.com/joshdick/onedark.vim.git
+  colorscheme onedark
+else
+  colorscheme torte
+endif
 
 if has("win32")
   " Set options and add mapping such that Vim behaves a lot like MS-Windows
