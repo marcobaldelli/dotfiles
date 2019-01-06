@@ -21,6 +21,7 @@ alias notify="terminal-notifier -sound default -message $1"
 alias nettop='nettop -dP'
 alias ftp_start='sudo -s launchctl load -w /System/Library/LaunchDaemons/ftp.plist && echo "Serving FTP from IP address $(myip)"'
 alias ftp_stop='sudo -s launchctl unload -w /System/Library/LaunchDaemons/ftp.plist'
+alias wiki='cd ~/Documents/Wiki/src'
 
 # brew install bash-completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
