@@ -10,6 +10,10 @@ myip() {
     ifconfig en0 | grep 'inet ' | cut -d ' ' -f 2
 }
 
+yt() {
+    (cd ~/Downloads/_youtube-backlog && youtube-dl "$@")
+}
+
 export PS1="\n\[\e[32;1m\][\u@\H \W]\$ \[\e[0m\]"
 export PATH="~/bin:$PATH"
 
