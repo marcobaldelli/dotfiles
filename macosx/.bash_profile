@@ -14,6 +14,10 @@ yt() {
     (cd ~/Downloads/_youtube-backlog && youtube-dl "$@")
 }
 
+yta() {
+    (cd ~/Downloads/_youtube-backlog && youtube-dl -f 140 "$@")
+}
+
 export PS1="\n\[\e[32;1m\][\u@\H \W]\$ \[\e[0m\]"
 export PATH="~/bin:$PATH"
 
