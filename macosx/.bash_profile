@@ -21,14 +21,14 @@ yta() {
 export PS1="\n\[\e[32;1m\][\u@\H \W]\$ \[\e[0m\]"
 export PATH="~/bin:$PATH"
 
-alias ls='ls -GF'
-alias ll='ls -l'
-alias grep='grep --color'
-alias rand='echo $(($RANDOM % 100))'
-alias notify="terminal-notifier -sound default -message $1"
-alias nettop='nettop -dP'
 alias ftp_start='sudo -s launchctl load -w /System/Library/LaunchDaemons/ftp.plist && echo "Serving FTP from IP address $(myip)"'
 alias ftp_stop='sudo -s launchctl unload -w /System/Library/LaunchDaemons/ftp.plist'
+alias grep='grep --color'
+alias ll='ls -l'
+alias ls='ls -GF'
+alias nettop='nettop -dP'
+alias notify="terminal-notifier -sound default -message $1"
+alias rand='echo $(($RANDOM % 100))'
 alias wiki='cd ~/Documents/Wiki/src'
 
 # brew install bash-completion
