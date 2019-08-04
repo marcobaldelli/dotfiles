@@ -34,7 +34,6 @@ set incsearch                  " Enable incremental search
 set iskeyword+=_               " Treat underscore as a keyword (useful for word-based movements)
 set linebreak                  " Don't break words when displaying wrapped lines
 set listchars=tab:▸\ ,eol:¬,trail:·
-set mouse=a                    " Enable mouse for all modes
 set nobackup                   " Don't create a backup file
 set noerrorbells               " Don't beep
 set nolist                     " Show listchars such as tab, end-of-line and trailing spaces
