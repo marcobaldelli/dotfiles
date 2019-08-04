@@ -29,6 +29,7 @@ alias ls='ls -GF'
 alias nettop='nettop -dP'
 alias notify="terminal-notifier -sound default -message $1"
 alias rand='echo $(($RANDOM % 100))'
+alias t='tree -C'
 alias wiki='cd ~/Documents/Wiki/src'
 
 # brew install bash-completion
