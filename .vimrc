@@ -94,7 +94,6 @@ nnoremap <leader>W :call StripTrailingWhitespace()<CR>
 
 " Markdown {{{
 autocmd BufNewFile,BufRead *.md set filetype=markdown
-autocmd BufNewFile,BufRead ~/Dropbox/books/*txt set filetype=markdown
 "}}}
 
 " Oracle PL/SQL {{{
