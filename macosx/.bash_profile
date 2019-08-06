@@ -24,7 +24,7 @@ _youtubedl_audio () {
 }
 
 export PS1="\n\[\e[32;1m\][\u@\H \W]\$ \[\e[0m\]"
-export PATH="~/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
 
 alias ftp_start='sudo -s launchctl load -w /System/Library/LaunchDaemons/ftp.plist && echo "Serving FTP from IP address $(myip)"'
 alias ftp_stop='sudo -s launchctl unload -w /System/Library/LaunchDaemons/ftp.plist'
@@ -32,7 +32,7 @@ alias grep='grep --color'
 alias ll='ls -l'
 alias ls='ls -GF'
 alias nettop='nettop -dP'
-alias notify="terminal-notifier -sound default -message $1"
+alias notify='terminal-notifier -sound default -message'
 alias rand='echo $(($RANDOM % 100))'
 alias t="tree -C -a -I '.git|.DS_Store' --noreport"
 alias wiki='cd ~/Documents/Wiki/src'
@@ -40,8 +40,8 @@ alias yt='_youtubedl'
 alias yta='_youtubedl_audio'
 
 # brew install bash-completion
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
+if [ -f "$(brew --prefix)/etc/bash_completion" ]; then
+  . "$(brew --prefix)/etc/bash_completion"
 fi
 
 # bash history configuration
@@ -49,7 +49,8 @@ fi
 export HISTFILESIZE=50000
 export HISTSIZE=50000
 export HISTCONTROL=ignoreboth:erasedups
-export HISTTIMEFORMAT="[$(tput setaf 6)%F %T$(tput sgr0)]: " # colorful date
+HISTTIMEFORMAT="[$(tput setaf 6)%F %T$(tput sgr0)]: " # colorful date
+export HISTTIMEFORMAT
 
 # for ipython
 export LC_ALL=en_US.UTF-8
