@@ -2,6 +2,10 @@ beep() {
     afplay /System/Library/Sounds/Glass.aiff
 }
 
+f() {
+    find . -type f -iname "*$1*"
+}
+
 s() {
     sleep "$1" && beep
 }
