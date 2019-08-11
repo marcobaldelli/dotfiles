@@ -14,17 +14,17 @@ myip() {
     ifconfig en0 | grep 'inet ' | cut -d ' ' -f 2
 }
 
-_youtubedl() {
+__youtubedl() {
     declare -r url="$1"
     declare -r format="${2:-bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best}"
     declare -r download_dir="$HOME/Downloads/_youtube-backlog"
     (cd "$download_dir" && youtube-dl -f "$format" "$url")
 }
 
-_youtubedl_audio () {
+__youtubedl_audio_only () {
     declare -r url="$1"
     declare -r format='bestaudio[ext=m4a]'
-    _youtubedl "$url" "$format"
+    __youtubedl "$url" "$format"
 }
 
 export PS1="\n\[\e[32;1m\][\u@\H \W]\$ \[\e[0m\]"
@@ -40,8 +40,8 @@ alias notify='terminal-notifier -sound default -message'
 alias rand='echo $(($RANDOM % 100))'
 alias t="tree -C -a -I '.git|.DS_Store' --noreport"
 alias wiki='cd ~/Documents/Wiki/src'
-alias yt='_youtubedl'
-alias yta='_youtubedl_audio'
+alias yt='__youtubedl'
+alias yta='__youtubedl_audio_only'
 
 # brew install bash-completion
 if [ -f "$(brew --prefix)/etc/bash_completion" ]; then
