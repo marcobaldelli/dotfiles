@@ -3,11 +3,13 @@ beep() {
 }
 
 f() {
-    find . -type f -iname "*$1*"
+    declare -r pattern="$1"
+    find . -type f -iname "*${pattern}*"
 }
 
 s() {
-    sleep "$1" && beep
+    declare -r seconds="$1"
+    sleep "$seconds" && beep
 }
 
 myip() {
