@@ -46,7 +46,6 @@ set showmatch                  " When a bracket is inserted, briefly jump to the
 set spellsuggest=best,10       " Spelling shows at most 10 suggestions
 set synmaxcol=500              " Maximum column in which to search for syntax items
 set undolevels=1000            " Keep 1000 undos in memory
-set viminfo=                   " Disables logging to .viminfo
 set wildignore=*.swp,*.bak,*.pyc,*.class " File extensions ignored by autocompletion
 set wildmode=list:longest,list:full
 " }}}
