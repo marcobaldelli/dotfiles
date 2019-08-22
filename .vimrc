@@ -7,9 +7,9 @@ execute pathogen#infect()
 " termguicolors doesn't seem to work correctly in OSX Terminal
 if (has("termguicolors") && ! has("osx"))
   set termguicolors
+   let g:onedark_terminal_italics=1
 endif
 " git clone https://github.com/joshdick/onedark.vim.git
-let g:onedark_terminal_italics=1
 colorscheme onedark
 
 " Variables configuration {{{
