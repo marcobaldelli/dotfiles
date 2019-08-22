@@ -13,10 +13,8 @@ let g:onedark_terminal_italics=1
 colorscheme onedark
 
 " Variables configuration {{{
-set autochdir                  " Change to the directory containing the file which was opened
 set backspace=indent,eol,start " Allow backspacing over everything in insert mode
 set encoding=utf-8             " Use Unicode UTF-8 encoding
-set guioptions=gt              " Disable everything else (menu, toolbar, side scrollbars)
 set hidden                     " A buffer becomes hidden when it is abandoned
 set history=5000               " Keep 5000 lines of command line history
 set hlsearch                   " Highlight all search matches
@@ -27,8 +25,6 @@ set linebreak                  " Don't break words when displaying wrapped lines
 set listchars=tab:▸\ ,eol:¬,trail:·
 set nobackup                   " Don't create a backup file
 set noerrorbells               " Don't beep
-set nolist                     " Show listchars such as tab, end-of-line and trailing spaces
-set nonumber                   " Don't show line numbers
 set noswapfile                 " Don't create a swap file
 set shortmess+=I               " Don't show the `intro' message
 set showbreak=↪                " String to put at the start of lines that have been wrapped
