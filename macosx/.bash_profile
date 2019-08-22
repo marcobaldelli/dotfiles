@@ -4,7 +4,7 @@ beep() {
 
 f() {
     declare -r pattern="$1"
-    find . -type f -iname "*${pattern}*"
+    find . -type "f" -iname "*${pattern}*"
 }
 
 s() {
@@ -29,7 +29,7 @@ __youtubedl_audio_only () {
     __youtubedl "$url" "$format"
 }
 
-export PS1="\n\[\e[32;1m\][\u@\H \W]\$ \[\e[0m\]"
+export PS1='\n\[\e[32;1m\][\u@\H \W]\$ \[\e[0m\]'
 export PATH="$HOME/bin:$PATH"
 
 alias ftp_start='sudo -s launchctl load -w /System/Library/LaunchDaemons/ftp.plist && echo "Serving FTP from IP address $(myip)"'
@@ -46,6 +46,7 @@ alias yt='__youtubedl'
 alias yta='__youtubedl_audio_only'
 
 # brew install bash-completion
+# shellcheck source=/dev/null
 if [ -f "$(brew --prefix)/etc/bash_completion" ]; then
   . "$(brew --prefix)/etc/bash_completion"
 fi
