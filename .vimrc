@@ -8,14 +8,9 @@ execute pathogen#infect()
 if (has("termguicolors") && ! has("osx"))
   set termguicolors
 endif
-
-if has("osx")
-  " git clone https://github.com/joshdick/onedark.vim.git
-  colorscheme onedark
-else
-  colorscheme torte
-endif
-
+" git clone https://github.com/joshdick/onedark.vim.git
+let g:onedark_terminal_italics=1
+colorscheme onedark
 
 " Variables configuration {{{
 set autochdir                  " Change to the directory containing the file which was opened
