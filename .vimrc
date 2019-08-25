@@ -57,6 +57,9 @@ set statusline+=\ %{&fileformat}]    " File format (eg. dos, unix)
 " }}}
 
 " Custom key mappings {{{
+" Unmap K (keyword lookup)
+nnoremap K <Nop>
+
 " Clear search highlighting
 nmap <silent> <C-L> :let @/=""<CR>
 
