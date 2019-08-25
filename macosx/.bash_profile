@@ -33,7 +33,7 @@ __youtubedl_audio_only () {
     __youtubedl "$url" "$format"
 }
 
-export PS1='\n\[\e[32;1m\][\u@\H \W]\$ \[\e[0m\]'
+export PS1='\n\[\e[32;1m\][\u@\h \W]\$ \[\e[0m\]'
 export PATH="$HOME/bin:$PATH"
 
 alias ag='ag --hidden'
