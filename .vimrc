@@ -38,6 +38,10 @@ set wildmode=list:longest,list:full
 " }}}
 
 " Status line formatting {{{
+" It looks like this:
+"
+" (1) .vimrc 1% (1,1)                {VIM} [utf-8, unix]
+"
 set laststatus=2                     " Always display the status line
 set statusline=                      " Reset settings
 set statusline+=\(%n\)               " Buffer number
