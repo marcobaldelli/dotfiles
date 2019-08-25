@@ -8,7 +8,8 @@
 [core]
 	editor = vim
 [alias]
-	ca = commit -a --verbose
+	c = commit --verbose
+	ca = c -a
 	lg = log --oneline --graph --all
 [credential]
 	helper = cache --timeout=86400
