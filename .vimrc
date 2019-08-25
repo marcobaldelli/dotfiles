@@ -7,6 +7,7 @@ syntax on
 call plug#begin('~/.vim/plugged')
 Plug 'ervandew/supertab'
 Plug 'joshdick/onedark.vim'
+Plug 'junegunn/vim-peekaboo'
 call plug#end()
 " }}}
 
