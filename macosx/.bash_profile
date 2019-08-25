@@ -16,6 +16,10 @@ myip() {
     ifconfig en0 | grep 'inet ' | cut -d ' ' -f 2
 }
 
+qrcode() {
+    qrencode "$1" -o /tmp/qrcode.png && open /tmp/qrcode.png
+}
+
 __youtubedl() {
     declare -r url="$1"
     declare -r format="${2:-bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best}"
