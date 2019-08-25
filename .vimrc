@@ -2,7 +2,13 @@
 set nocompatible
 language messages en_US.UTF-8 " always use English for interface messages
 syntax on
-execute pathogen#infect()
+
+" Plugins {{{
+call plug#begin('~/.vim/plugged')
+Plug 'ervandew/supertab'
+Plug 'joshdick/onedark.vim'
+call plug#end()
+" }}}
 
 " termguicolors doesn't seem to work correctly in OSX Terminal
 if (has("termguicolors") && ! has("osx"))
