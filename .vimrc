@@ -25,6 +25,7 @@ set linebreak                  " Don't break words when displaying wrapped lines
 set listchars=tab:▸\ ,eol:¬,trail:·
 set nobackup                   " Don't create a backup file
 set noerrorbells               " Don't beep
+set nojoinspaces               " Don't insert two spaces after a '.', '?' and '!' with a join command
 set noswapfile                 " Don't create a swap file
 set shortmess+=I               " Don't show the `intro' message
 set showbreak=↪                " String to put at the start of lines that have been wrapped
