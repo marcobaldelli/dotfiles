@@ -97,4 +97,8 @@ autocmd BufNewFile,BufRead *.sql,*.pks,*.pkb,*.vw,*.tab,*.prc,*.fnc,*.tpb,afiedt
 " Crontab{{{
 " Fixes error `crontab: temp file must be edited in place`
 autocmd filetype crontab setlocal nobackup nowritebackup
+
+" Git
+" Spell check commit message
+autocmd FileType gitcommit setlocal spell spelllang=en
 "}}}
