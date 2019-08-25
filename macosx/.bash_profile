@@ -36,6 +36,7 @@ __youtubedl_audio_only () {
 export PS1='\n\[\e[32;1m\][\u@\H \W]\$ \[\e[0m\]'
 export PATH="$HOME/bin:$PATH"
 
+alias ag='ag --hidden'
 alias ftp_start='sudo -s launchctl load -w /System/Library/LaunchDaemons/ftp.plist && echo "Serving FTP from IP address $(myip)"'
 alias ftp_stop='sudo -s launchctl unload -w /System/Library/LaunchDaemons/ftp.plist'
 alias grep='grep --color'
