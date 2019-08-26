@@ -57,12 +57,10 @@ if [ -f "$(brew --prefix)/etc/bash_completion" ]; then
 fi
 
 # bash history configuration
-#export HISTIGNORE="ls:ll:cd:pwd"
 export HISTFILESIZE=50000
 export HISTSIZE=50000
 export HISTCONTROL=ignoreboth:erasedups
-HISTTIMEFORMAT="[$(tput setaf 6)%F %T$(tput sgr0)]: " # colorful date
-export HISTTIMEFORMAT
+HISTTIMEFORMAT="[%F %T]: " && export HISTTIMEFORMAT
 
 # for ipython
 export LC_ALL=en_US.UTF-8
