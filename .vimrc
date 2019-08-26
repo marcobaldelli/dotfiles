@@ -9,6 +9,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'ervandew/supertab'
 Plug 'joshdick/onedark.vim'
 Plug 'junegunn/vim-peekaboo'
+Plug 'mboughaba/i3config.vim'
 call plug#end()
 " }}}
 
