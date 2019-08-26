@@ -4,6 +4,7 @@ language messages en_US.UTF-8 " always use English for interface messages
 syntax on
 
 " Plugins {{{
+" https://github.com/junegunn/vim-plug
 call plug#begin('~/.vim/plugged')
 Plug 'ervandew/supertab'
 Plug 'joshdick/onedark.vim'
@@ -11,13 +12,14 @@ Plug 'junegunn/vim-peekaboo'
 call plug#end()
 " }}}
 
+" Color scheme {{{
 " termguicolors doesn't seem to work correctly in OSX Terminal
 if (has("termguicolors") && ! has("osx"))
   set termguicolors
    let g:onedark_terminal_italics=1
 endif
-" git clone https://github.com/joshdick/onedark.vim.git
 colorscheme onedark
+"}}}
 
 " Variables configuration {{{
 set backspace=indent,eol,start " Allow backspacing over everything in insert mode
@@ -93,15 +95,14 @@ endfunction
 nnoremap <leader>W :call StripTrailingWhitespace()<CR>
 " }}}
 
-" Markdown {{{
+" Language-specific settings {{{
+" Markdown
 autocmd BufNewFile,BufRead *.md set filetype=markdown
-"}}}
 
-" Oracle PL/SQL {{{
+" Oracle PL/SQL
 autocmd BufNewFile,BufRead *.sql,*.pks,*.pkb,*.vw,*.tab,*.prc,*.fnc,*.tpb,afiedt.buf set filetype=plsql
-"}}}
 
-" Crontab{{{
+" Crontab
 " Fixes error `crontab: temp file must be edited in place`
 autocmd filetype crontab setlocal nobackup nowritebackup
 
