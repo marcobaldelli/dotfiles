@@ -32,7 +32,7 @@ set ignorecase                 " Search is always case insensitive
 set incsearch                  " Enable incremental search
 set iskeyword+=_               " Treat underscore as a keyword (useful for word-based movements)
 set linebreak                  " Don't break words when displaying wrapped lines
-set listchars=tab:▸\ ,eol:¬,trail:·
+set listchars=tab:▸\ ,eol:¬,trail:· " Strings to use in 'list' mode
 set nobackup                   " Don't create a backup file
 set noerrorbells               " Don't beep
 set nojoinspaces               " Don't insert two spaces after a '.', '?' and '!' with a join command
@@ -45,14 +45,14 @@ set spellsuggest=best,10       " Spelling shows at most 10 suggestions
 set synmaxcol=500              " Maximum column in which to search for syntax items
 set undolevels=1000            " Keep 1000 undos in memory
 set wildignore=*.swp,*.bak,*.pyc,*.class " File extensions ignored by autocompletion
-set wildmode=list:longest,list:full
+set wildmode=list:longest,list:full " Completion mode after pressing <Tab>
 " }}}
 
 " Status line formatting {{{
 " It looks like this:
-"
-" (1) .vimrc 1% (1,1)                {VIM} [utf-8, unix]
-"
+" +-----------------------------------------------------+
+" | (1) .vimrc 1% (1,1)             {VIM} [utf-8, unix] |
+" +-----------------------------------------------------+
 set laststatus=2                     " Always display the status line
 set statusline=                      " Reset settings
 set statusline+=\(%n\)               " Buffer number
