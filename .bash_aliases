@@ -16,7 +16,7 @@ __youtubedl() {
 
 __youtubedl_audio_only () {
     declare -r url="$1"
-    declare -r format='bestaudio[ext=m4a]'
+    declare -r format='bestaudio[ext=m4a]/bestaudio'
     __youtubedl "$url" "$format"
 }
 
