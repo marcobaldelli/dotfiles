@@ -22,8 +22,10 @@ __youtubedl_audio_only () {
 
 alias ag='ag --hidden'
 alias grep='grep --color'
+alias gs='git status'
 alias ll='ls -l'
 alias ls='ls -GF'
+alias ncdu='ncdu --color dark'
 alias nettop='nettop -dP'
 alias notify='terminal-notifier -sound default -message'
 alias rand='echo $(($RANDOM % 100))'
