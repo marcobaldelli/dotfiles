@@ -19,6 +19,7 @@ if (has("termguicolors") && ! has("osx"))
   set termguicolors
    let g:onedark_terminal_italics=1
 endif
+let g:onedark_color_overrides = {"black": {"gui": "#212226", "cterm": "235", "cterm16": "0" }}
 colorscheme onedark
 "}}}
 
