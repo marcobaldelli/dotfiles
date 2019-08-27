@@ -17,8 +17,9 @@ bindsym $mod+Return exec $term
 # kill focused window
 bindsym $mod+Shift+q kill
 
-# start dmenu (a program launcher)
+# start applications
 bindsym $mod+r exec dmenu_run
+bindsym $mod+x exec firefox
 
 # change focus
 bindsym $mod+Left focus left
