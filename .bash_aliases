@@ -22,10 +22,10 @@ __youtubedl_audio_only () {
 
 alias ag='ag --hidden'
 alias cat='bat'
-alias grep='grep --color'
+alias grep='grep --color=auto'
 alias gs='git status'
-alias ll='ls -l'
-alias ls='ls -GF'
+alias ll='ls -l --color=auto'
+alias ls='ls -GF --color=auto'
 alias ncdu='ncdu --color dark'
 alias nettop='nettop -dP'
 alias notify='terminal-notifier -sound default -message'
