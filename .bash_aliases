@@ -22,6 +22,8 @@ __youtubedl_audio_only () {
 
 alias ag='ag --hidden'
 alias cat='bat'
+alias gd='git diff'
+alias gdc='git diff --cached'
 alias grep='grep --color=auto'
 alias gs='git status'
 alias ll='ls -l --color=auto'
