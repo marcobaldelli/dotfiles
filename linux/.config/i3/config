@@ -18,7 +18,7 @@ bindsym $mod+Return exec $term
 bindsym $mod+Shift+q kill
 
 # start applications
-bindsym $mod+r exec dmenu_run
+bindsym $mod+r exec dmenu_run -fn 'Ubuntu-10'
 bindsym $mod+x exec firefox
 
 # change focus
