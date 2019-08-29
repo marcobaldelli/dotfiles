@@ -13,3 +13,6 @@
 	lg = log --oneline --graph --all
 [credential]
 	helper = cache --timeout=86400
+
+[includeIf "gitdir/i:**esprinet**"]
+	path = ~/Esprinet/.gitconfig
