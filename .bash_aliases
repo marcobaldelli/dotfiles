@@ -20,14 +20,21 @@ __youtubedl_audio_only () {
     __youtubedl "$url" "$format"
 }
 
+os="$(uname -s)"
+case "$os" in
+    "Darwin")
+        alias ls='ls -FG';;
+    "Linux")
+        alias ls='ls -F --color=auto';;
+esac
+
 alias ag='ag --hidden --ignore .git'
 alias cat='bat'
 alias gd='git diff'
 alias gdc='git diff --cached'
 alias grep='grep --color=auto'
 alias gs='git status'
-alias ll='ls -l --color=auto'
-alias ls='ls -GF --color=auto'
+alias ll='ls -l'
 alias ncdu='ncdu --color dark'
 alias nettop='nettop -dP'
 alias notify='terminal-notifier -sound default -message'
