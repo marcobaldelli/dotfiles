@@ -20,7 +20,7 @@ __youtubedl_audio_only () {
     __youtubedl "$url" "$format"
 }
 
-alias ag='ag --hidden'
+alias ag='ag --hidden --ignore .git'
 alias cat='bat'
 alias gd='git diff'
 alias gdc='git diff --cached'
