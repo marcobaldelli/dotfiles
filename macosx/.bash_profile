@@ -1,6 +1,7 @@
 # settings common to linux and macOS
-[ -f "./.bash_aliases" ] && . "./.bash_aliases"
-[ -f "./.bash_exports" ] && . "./.bash_exports"
+[ -f ./.bash_aliases ] && . ./.bash_aliases
+[ -f ./.bash_exports ] && . ./.bash_exports
+[ -f ./.bash_prompt ] && . ./.bash_prompt
 
 # macOS specific settings
 

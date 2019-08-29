@@ -1,0 +1,23 @@
+# fancy prompt with red exit status and yellow git branch
+
+exit_status()
+{
+    declare -r status="$?"
+    if [[ "$status" != 0 ]]; then
+        echo "$status "
+    fi
+}
+
+git_branch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+bash_prompt() {
+    declare -r exit_status && exit_status="\\[\\e[31;1m\\]\\$(exit_status)"
+    declare -r user_host && user_host="\\[\\e[32;1m\\][\\u@\\h \\W]"
+    declare -r git_prompt && git_prompt="\\[\\033[33m\\]\\$(git_branch)\\[\\033[00m\\]"
+    declare -r dollar && dollar="\$ \\[\\e[0m\\]"
+    PS1="${exit_status}${user_host}${git_prompt}${dollar}" && export PS1
+}
+
+bash_prompt
