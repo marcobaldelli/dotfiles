@@ -44,6 +44,7 @@ alias ncdu='ncdu --color dark'
 alias nettop='nettop -dP'
 alias notify='terminal-notifier -sound default -message'
 alias rand='echo $(($RANDOM % 100))'
+alias sc='screen -Rd marco'
 alias t="tree -C -a -I '.git|.DS_Store' --noreport"
 alias wiki='cd ~/Documents/Wiki/src'
 alias yt='__youtubedl'

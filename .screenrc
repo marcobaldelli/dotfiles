@@ -3,10 +3,13 @@ altscreen on
 
 # Status line configuration
 hardstatus alwayslastline
-hardstatus string "%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %H %{..Y} %M %d %C%a "
+hardstatus string "%{.bW}%-w%{kc}%n %t%{-}%+w %=%{..G} %H %{..Y} %D %d %M %c"
 
 # Don't show the startup message
 startup_message off
 
 # Default size of the scrollback buffer (num lines)
 defscrollback 100000
+
+# Detach and Re-attach without losing the regions/windows layout
+layout save default
