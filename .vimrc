@@ -103,10 +103,6 @@ inoremap <silent> <leader>d [<C-R>=strftime("%Y-%m-%d %H:%M")<CR>]
 " List buffers
 nnoremap <c-b> :ls<cr>:b<space>
 
-" Switch between next/previous buffer
-nnoremap <C-TAB> :bnext<CR>
-nnoremap <C-S-TAB> :bprev<CR>
-
 " Space bar toggles folding
 nnoremap <space> za
 "}}}
