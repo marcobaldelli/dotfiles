@@ -98,7 +98,7 @@ vnoremap < <gv
 vnoremap > >gv
 
 " Insert current date and time
-imap <silent> <C-F5> [<C-R>=strftime("%Y-%m-%d %H:%M")<CR>]
+imap <silent> <leader>d [<C-R>=strftime("%Y-%m-%d %H:%M")<CR>]
 
 " List buffers
 nnoremap <c-b> :ls<cr>:b<space>
