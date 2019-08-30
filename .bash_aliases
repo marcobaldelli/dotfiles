@@ -20,14 +20,19 @@ __youtubedl_audio_only () {
     __youtubedl "$url" "$format"
 }
 
+# OS Specific aliases
 os="$(uname -s)"
 case "$os" in
     "Darwin")
-        alias ls='ls -FG';;
+        alias ls='ls -FG'
+	;;
     "Linux")
-        alias ls='ls -F --color=auto';;
+        alias ls='ls -F --color=auto'
+        alias open='xdg-open'
+	;;
 esac
 
+# Common aliases
 alias ag='ag --hidden --ignore .git'
 alias cat='bat'
 alias gd='git diff'
