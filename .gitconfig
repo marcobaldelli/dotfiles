@@ -16,3 +16,5 @@
 
 [includeIf "gitdir/i:**esprinet**"]
 	path = ~/Esprinet/.gitconfig
+[merge]
+	tool = vimdiff
