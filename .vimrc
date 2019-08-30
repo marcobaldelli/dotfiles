@@ -91,21 +91,21 @@ set statusline+=\ %{&fileformat}]    " File format (eg. dos, unix)
 nnoremap K <Nop>
 
 " Clear search highlighting
-nmap <silent> <C-L> :let @/=""<CR>
+nnoremap <silent> <C-L> :let @/=""<CR>
 
 " Reselect visual block after (in|de)dent in visual mode
 vnoremap < <gv
 vnoremap > >gv
 
 " Insert current date and time
-imap <silent> <leader>d [<C-R>=strftime("%Y-%m-%d %H:%M")<CR>]
+inoremap <silent> <leader>d [<C-R>=strftime("%Y-%m-%d %H:%M")<CR>]
 
 " List buffers
 nnoremap <c-b> :ls<cr>:b<space>
 
 " Switch between next/previous buffer
-map <C-TAB> :bnext<CR>
-map <C-S-TAB> :bprev<CR>
+nnoremap <C-TAB> :bnext<CR>
+nnoremap <C-S-TAB> :bprev<CR>
 
 " Space bar toggles folding
 nnoremap <space> za
