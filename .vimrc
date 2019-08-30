@@ -106,6 +106,9 @@ nnoremap <c-b> :ls<cr>:b<space>
 " Switch between next/previous buffer
 map <C-TAB> :bnext<CR>
 map <C-S-TAB> :bprev<CR>
+
+" Space bar toggles folding
+nnoremap <space> za
 "}}}
 
 " Custom functions {{{
