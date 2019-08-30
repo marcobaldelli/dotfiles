@@ -1,8 +1,5 @@
 export PATH="$HOME/bin:$PATH"
 
-# bash prompt
-export PS1='\[\e[32;1m\][\u@\h \W]\$ \[\e[0m\]'
-
 # bash history configuration
 export HISTFILESIZE=50000
 export HISTSIZE=50000
@@ -15,3 +12,6 @@ export LANG=en_US.UTF-8
 
 # fixes crontab -e
 export EDITOR=vim
+
+# used to set the title of the terminal application
+export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
