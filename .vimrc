@@ -13,7 +13,11 @@ Plug 'mboughaba/i3config.vim'
 call plug#end()
 
 " FZF
-source /usr/share/doc/fzf/examples/fzf.vim
+if (has("osx"))
+  source /usr/local/Cellar/fzf/**/fzf.vim
+else
+  source /usr/share/doc/fzf/examples/fzf.vim
+endif
 " Customize fzf colors to match your color scheme
 let g:fzf_colors =
 \ { 'fg':      ['fg', 'Normal'],
