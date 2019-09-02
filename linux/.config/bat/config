@@ -3,3 +3,8 @@
 
 # Use italic text on the terminal (not supported on all terminals)
 --italic-text=always
+
+# Syntax highlighting
+--map-syntax pkb:sql
+--map-syntax pks:sql
+--map-syntax vw:sql
