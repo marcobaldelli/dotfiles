@@ -35,6 +35,7 @@ esac
 # Common aliases
 alias ag='ag --hidden --ignore .git'
 alias cat='bat'
+alias gb='git branch -a -vv'
 alias gd='git diff'
 alias gdc='git diff --cached'
 alias grep='grep --color=auto'
