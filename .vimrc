@@ -109,6 +109,10 @@ nnoremap <c-b> :ls<cr>:b<space>
 
 " Space bar toggles folding
 nnoremap <space> za
+
+" Make :W the same as :w and so on
+command! W write
+command! Q quit
 "}}}
 
 " Custom functions {{{
