@@ -6,6 +6,7 @@ syntax on
 " Plugins {{{
 " https://github.com/junegunn/vim-plug
 call plug#begin('~/.vim/plugged')
+Plug 'NLKNguyen/papercolor-theme'
 Plug 'ervandew/supertab'
 Plug 'joshdick/onedark.vim'
 Plug 'junegunn/vim-peekaboo'
@@ -43,7 +44,21 @@ if (has("termguicolors") && ! has("osx"))
    let g:onedark_terminal_italics=1
 endif
 let g:onedark_color_overrides = {"black": {"gui": "#212226", "cterm": "235", "cterm16": "0" }}
+
+" Default colorscheme
+set background=dark
 colorscheme onedark
+
+function! ColorSchemeToggle()
+  if &background == "dark"
+    set background=light
+    colorscheme PaperColor
+  else
+    set background=dark
+    colorscheme onedark
+  endif
+endfunction
+nmap <silent> <F11> :call ColorSchemeToggle()<CR>
 "}}}
 
 " Variables configuration {{{
