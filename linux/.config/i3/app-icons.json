@@ -1,6 +1,7 @@
 {
     "firefox": "firefox",
     "keepassxc": "key",
+    "mousepad": "edit",
     "thunar": "folder-open",
     "xfce4-terminal": "terminal"
 }

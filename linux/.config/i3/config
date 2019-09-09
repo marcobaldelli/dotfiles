@@ -118,3 +118,5 @@ bar {
 
 # https://pypi.org/project/i3-workspace-names-daemon
 exec_always --no-startup-id exec i3-workspace-names-daemon
+
+for_window [class="Ristretto"] floating enable resize set 1400 800 move absolute position center
