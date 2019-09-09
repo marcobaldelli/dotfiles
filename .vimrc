@@ -59,6 +59,9 @@ function! ColorSchemeToggle()
   endif
 endfunction
 nmap <silent> <F11> :call ColorSchemeToggle()<CR>
+
+" Highlight as error trailing whitespaces or tabs
+match ErrorMsg /\s\+$/
 "}}}
 
 " Variables configuration {{{
