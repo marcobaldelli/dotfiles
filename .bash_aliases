@@ -36,6 +36,7 @@ esac
 alias ag='ag --hidden --ignore .git'
 alias cat='bat'
 alias gb='git branch -a -vv'
+alias gc='git commit --verbose'
 alias gd='git diff'
 alias gdc='git diff --cached'
 alias gf='git fetch --all --prune'
