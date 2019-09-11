@@ -15,10 +15,12 @@ git_branch() {
 
 bash_prompt() {
     local exit_status && exit_status="\\[\\e[31;1m\\]\$(print_status)"
-    local user_host && user_host="\\[\\e[32;1m\\][\\u@\\h \\W]"
+    #local user_host && user_host="\\e[32;1m\\]\\u@\\h"
+    #local short_pwd && short_pwd="\\e[32;1m\\]\\W"
+    local full_pwd && full_pwd="\\e[32;1m\\]\\w"
     local git_prompt && git_prompt="\\[\\033[33m\\]\$(git_branch)\\[\\033[00m\\]"
-    local dollar && dollar="\$ \\[\\e[0m\\]"
-    PS1="${exit_status}${user_host}${git_prompt}${dollar}" && export PS1
+    local dollar && dollar="\\e[32;1m\\]\\$ \\[\\e[0m\\]"
+    PS1="${exit_status}${full_pwd}${git_prompt} ${dollar}" && export PS1
 }
 
 bash_prompt
