@@ -25,11 +25,13 @@ os="$(uname -s)"
 case "$os" in
     "Darwin")
         alias ls='ls -FG'
-	;;
+        ;;
     "Linux")
         alias ls='ls -F --color=auto'
         alias open='xdg-open'
-	;;
+        alias pbcopy='xclip -selection clipboard'
+        alias pbpaste='xclip -selection clipboard -o'
+        ;;
 esac
 
 # Common aliases
