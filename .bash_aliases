@@ -1,4 +1,4 @@
-f() {
+__f() {
     declare -r pattern="$1"
     find . -type "f" -iname "*${pattern}*"
 }
@@ -37,6 +37,7 @@ esac
 # Common aliases
 alias ag='ag --hidden --ignore .git'
 alias cat='bat'
+alias f='__f'
 alias gb='git branch -a -vv'
 alias gc='git commit --verbose'
 alias gd='git diff'
