@@ -6,11 +6,11 @@ syntax on
 " Plugins {{{
 " https://github.com/junegunn/vim-plug
 call plug#begin('~/.vim/plugged')
-Plug 'NLKNguyen/papercolor-theme'
 Plug 'ervandew/supertab'
 Plug 'joshdick/onedark.vim'
 Plug 'junegunn/vim-peekaboo'
 Plug 'mboughaba/i3config.vim'
+Plug 'sonph/onehalf', {'rtp': 'vim/'}
 call plug#end()
 
 " FZF
@@ -52,7 +52,7 @@ colorscheme onedark
 function! ColorSchemeToggle()
   if &background == "dark"
     set background=light
-    colorscheme PaperColor
+    colorscheme onehalflight
   else
     set background=dark
     colorscheme onedark
