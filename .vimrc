@@ -143,7 +143,7 @@ nnoremap <leader>W :call StripTrailingWhitespace()<CR>
 
 " Language-specific settings {{{
 " Markdown
-autocmd BufNewFile,BufRead *.md set autoindent filetype=markdown
+autocmd BufNewFile,BufRead *.md set autoindent filetype=markdown spell spelllang=en
 
 " Oracle PL/SQL
 autocmd BufNewFile,BufRead *.sql,*.pks,*.pkb,*.vw,*.tab,*.prc,*.fnc,*.tpb,afiedt.buf
