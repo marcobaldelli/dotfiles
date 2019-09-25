@@ -1,7 +1,8 @@
 # settings common to linux and macOS
-[ -f ./.bash_aliases ] && . ./.bash_aliases
-[ -f ./.bash_exports ] && . ./.bash_exports
-[ -f ./.bash_prompt ] && . ./.bash_prompt
+# shellcheck source=/dev/null
+[ -f "${HOME}/.bash_aliases" ] && . "${HOME}/.bash_aliases"
+[ -f "${HOME}/.bash_exports" ] && . "${HOME}/.bash_exports"
+[ -f "${HOME}/.bash_prompt"  ] && . "${HOME}/.bash_prompt"
 
 # macOS specific settings
 
