@@ -10,4 +10,4 @@ $brew upgrade
 $brew cask upgrade --greedy
 
 # Clean up
-$brew cleanup
+$brew cleanup -s
