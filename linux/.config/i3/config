@@ -49,6 +49,12 @@ bindsym $mod+Shift+KP_2 move down
 bindsym $mod+Shift+KP_8 move up
 bindsym $mod+Shift+KP_6 move right
 
+# resize splits
+bindsym $mod+Shift+h exec --no-startup-id i3resize left
+bindsym $mod+Shift+j exec --no-startup-id i3resize down
+bindsym $mod+Shift+k exec --no-startup-id i3resize up
+bindsym $mod+Shift+l exec --no-startup-id i3resize right
+
 # split in horizontal orientation
 bindsym $mod+h split h
 
