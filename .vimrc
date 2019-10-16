@@ -13,30 +13,6 @@ Plug 'mboughaba/i3config.vim'
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
 call plug#end()
 
-" FZF
-if (has("osx"))
-  source /usr/local/Cellar/fzf/**/fzf.vim
-else
-  source /usr/share/doc/fzf/examples/fzf.vim
-endif
-" Customize fzf colors to match your color scheme
-let g:fzf_colors =
-\ { 'fg':      ['fg', 'Normal'],
-  \ 'bg':      ['bg', 'Normal'],
-  \ 'hl':      ['fg', 'Comment'],
-  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
-  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
-  \ 'hl+':     ['fg', 'Statement'],
-  \ 'info':    ['fg', 'PreProc'],
-  \ 'border':  ['fg', 'Ignore'],
-  \ 'prompt':  ['fg', 'Conditional'],
-  \ 'pointer': ['fg', 'Exception'],
-  \ 'marker':  ['fg', 'Keyword'],
-  \ 'spinner': ['fg', 'Label'],
-  \ 'header':  ['fg', 'Comment'] }
-nnoremap <c-p> :FZF<cr>
-" }}}
-
 " Color scheme {{{
 " termguicolors doesn't seem to work correctly in OSX Terminal
 if (has("termguicolors") && ! has("osx"))
