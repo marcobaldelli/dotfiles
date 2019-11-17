@@ -1,26 +1,13 @@
 # vim: ft=sh
-# fancy prompt with red exit status and yellow git branch
-
-print_status()
-{
-    declare -r status="$?"
-    if [[ "$status" != 0 ]]; then
-        echo "$status "
-    fi
-}
+# fancy prompt with yellow git branch
 
 git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
 bash_prompt() {
-    local exit_status && exit_status="\\[\\e[31;1m\\]\$(print_status)"
-    #local user_host && user_host="\\e[32;1m\\]\\u@\\h"
-    #local short_pwd && short_pwd="\\e[32;1m\\]\\W"
-    local full_pwd && full_pwd="\\e[32;1m\\]\\w"
     local git_prompt && git_prompt="\\[\\033[33m\\]\$(git_branch)\\[\\033[00m\\]"
-    local dollar && dollar="\\e[32;1m\\]\\$ \\[\\e[0m\\]"
-    PS1="${exit_status}${full_pwd}${git_prompt} ${dollar}" && export PS1
+    PS1="\[\e[32;1m\] \w${git_prompt} \[\e[32;1m\]\$ \[\e[0m\]" && export PS1
 }
 
 bash_prompt
