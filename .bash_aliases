@@ -36,7 +36,7 @@ esac
 
 # Common aliases
 alias ag='ag --hidden --ignore .git'
-alias cat='bat'
+alias cat='batcat'
 alias f='__f'
 alias gb='git branch -a -vv'
 alias gc='git commit --verbose'
