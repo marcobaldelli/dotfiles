@@ -25,8 +25,10 @@ os="$(uname -s)"
 case "$os" in
     "Darwin")
         alias ls='ls -FG'
+        alias cat='bat'
         ;;
     "Linux")
+        alias cat='batcat'
         alias ls='ls -F --color=auto'
         alias open='xdg-open'
         alias pbcopy='xclip -selection clipboard'
@@ -36,7 +38,6 @@ esac
 
 # Common aliases
 alias ag='ag --hidden --ignore .git'
-alias cat='batcat'
 alias f='__f'
 alias gb='git branch -a -vv'
 alias gc='git commit --verbose'
