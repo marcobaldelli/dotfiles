@@ -7,7 +7,7 @@ $brew update
 $brew upgrade
 
 # Update binary packages
-$brew upgrade --cask
+$brew upgrade --cask --greedy
 
 # Clean up
 $brew cleanup -s
