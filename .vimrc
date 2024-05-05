@@ -56,6 +56,7 @@ set noerrorbells               " Don't beep
 set nojoinspaces               " Don't insert two spaces after a '.', '?' and '!' with a join command
 set noswapfile                 " Don't create a swap file
 set shortmess+=I               " Don't show the `intro' message
+set shortmess-=S               " Show search count message when searching
 set showbreak=↪                " String to put at the start of lines that have been wrapped
 set showcmd                    " Show (partial) command in the last line of the screen
 set showmatch                  " When a bracket is inserted, briefly jump to the matching one
