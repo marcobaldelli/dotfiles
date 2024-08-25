@@ -11,7 +11,7 @@ __youtubedl() {
     declare -r url="$1"
     declare -r format="${2:-bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best}"
     declare -r download_dir="$HOME/Downloads/_youtube-backlog"
-    (cd "$download_dir" && youtube-dl -f "$format" "$url")
+    (cd "$download_dir" && yt-dlp -f "$format" "$url")
 }
 
 __youtubedl_audio_only () {

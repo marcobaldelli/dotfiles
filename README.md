@@ -8,4 +8,4 @@ My dotfiles for bash, vim, etc.
 - `qrcode` generates and displays a QR Code using [libqrencode](https://fukuchi.org/works/qrencode/index.html.en)
 - `s` acts as a basic timer (sleeps for N seconds, then beeps)
 - `t` displays a colorized [directory tree](http://mama.indstate.edu/users/ice/tree)
-- `yt` and `yta` are wrappers for [youtube-dl](https://github.com/ytdl-org/youtube-dl)
+- `yt` and `yta` are wrappers for [yt-dlp](https://github.com/yt-dlp/yt-dlp)
