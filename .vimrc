@@ -93,6 +93,19 @@ command! W write
 command! Q quit
 "}}}
 
+" GVIM settings {{{
+if has("gui_running")
+  set guioptions-=T  " Hide toolbar
+  set guioptions-=m  " Hide menubar
+endif
+
+if has("gui_win32")
+  set guifont=Consolas:h11
+  source $VIMRUNTIME/mswin.vim
+  behave mswin
+endif
+"}}}
+
 " Custom functions {{{
 function! StripTrailingWhitespace()
     %s/\s\+$//e
