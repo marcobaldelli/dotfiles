@@ -3,35 +3,18 @@ set nocompatible
 language messages en_US.UTF-8 " always use English for interface messages
 syntax on
 
-" Plugins {{{
-" https://github.com/junegunn/vim-plug
-call plug#begin('~/.vim/plugged')
-Plug 'ervandew/supertab'
-Plug 'joshdick/onedark.vim'
-Plug 'junegunn/vim-peekaboo'
-Plug 'mboughaba/i3config.vim'
-Plug 'sonph/onehalf', {'rtp': 'vim/'}
-call plug#end()
-
 " Color scheme {{{
-" termguicolors doesn't seem to work correctly in OSX Terminal
-if (has("termguicolors") && ! has("osx"))
-  set termguicolors
-   let g:onedark_terminal_italics=1
-endif
-let g:onedark_color_overrides = {"black": {"gui": "#212226", "cterm": "235", "cterm16": "0" }}
-
 " Default colorscheme
 set background=dark
-colorscheme onedark
+colorscheme torte
 
 function! ColorSchemeToggle()
   if &background == "dark"
     set background=light
-    colorscheme onehalflight
+    colorscheme morning
   else
     set background=dark
-    colorscheme onedark
+    colorscheme torte
   endif
 endfunction
 nmap <silent> <F11> :call ColorSchemeToggle()<CR>
