@@ -10,4 +10,5 @@ $brew upgrade
 $brew upgrade --cask --greedy
 
 # Clean up
-$brew cleanup -s
+#$brew cleanup -s
+$brew cleanup --prune=all
