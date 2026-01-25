@@ -9,15 +9,14 @@ qrcode() {
 
 __youtubedl() {
     declare -r url="$1"
-    declare -r format="${2:-bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best}"
-    declare -r download_dir="$HOME/Downloads/_youtube-backlog"
-    (cd "$download_dir" && yt-dlp -f "$format" "$url")
+    declare -r download_dir="${HOME}/Downloads/_youtube-backlog"
+    (cd "$download_dir" && yt-dlp -t mp4 "$url")
 }
 
 __youtubedl_audio_only () {
     declare -r url="$1"
-    declare -r format='bestaudio[ext=m4a]/bestaudio'
-    __youtubedl "$url" "$format"
+    declare -r download_dir="${HOME}/Downloads/_youtube-backlog"
+    (cd "$download_dir" && yt-dlp -t aac "$url")
 }
 
 # OS Specific aliases
