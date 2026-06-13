@@ -4,10 +4,10 @@ brew=/usr/local/bin/brew
 
 # Update source packages
 $brew update
-$brew upgrade
+$brew upgrade -y
 
 # Update binary packages
-$brew upgrade --cask --greedy
+$brew upgrade --cask --greedy -y
 
 # Clean up
 #$brew cleanup -s
